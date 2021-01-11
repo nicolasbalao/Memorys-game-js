@@ -24,10 +24,12 @@ body {
   background-color: darkblue;
 }
 
-.return.green {
+.return.green,
+.win.green {
   background-color: green;
 }
 
-.return.yellow {
+.return.yellow,
+.win.yellow {
   background-color: yellow;
 }
