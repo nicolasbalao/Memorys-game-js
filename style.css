@@ -11,25 +11,75 @@ body {
 }
 
 .game {
-  width: 500px;
-  height: 500px;
+  position: relative;
+  width: 800px;
+  height: 800px;
   background-color: cyan;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   padding: 1rem;
   gap: 1rem;
+  perspective: 80%;
 }
 
 .card {
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card-face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
   background-color: darkblue;
 }
 
+.card.return {
+  transform: rotateY(180deg);
+}
+
 .return.green,
-.win.green {
+.card.green.win .front {
   background-color: green;
 }
 
 .return.yellow,
-.win.yellow {
+.card.yellow.win .front {
   background-color: yellow;
+}
+
+.return.black,
+.card.black.win .front {
+  background-color: black;
+}
+
+.return.orange,
+.card.orange.win .front {
+  background-color: orange;
+}
+
+.return.red,
+.card.red.win .front {
+  background-color: red;
+}
+
+.return.rebeccapurple,
+.card.rebeccapurple.win .front {
+  background-color: rebeccapurple;
+}
+
+.return.violet,
+.card.violet.win .front {
+  background-color: violet;
+}
+
+.return.brown,
+.card.brown.win .front {
+  background-color: brown;
 }
