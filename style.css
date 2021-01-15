@@ -8,22 +8,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  background-image: url("/assets/bg-1.jpg");
+  background-size: cover;
 }
 
 .game {
   position: relative;
-  width: 800px;
-  height: 800px;
-  background-color: cyan;
+  height: auto;
+  width: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   padding: 1rem;
   gap: 1rem;
   perspective: 80%;
 }
 
 .card {
+  height: 267px;
+  width: 189px;
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -37,49 +41,120 @@ body {
 }
 
 .front {
-  background-color: darkblue;
+  background-image: url("assets/images.jpg");
+  background-size: cover;
 }
 
 .card.return {
   transform: rotateY(180deg);
 }
 
-.return.green,
-.card.green.win .front {
-  background-color: green;
+/* .return.green,
+.card.green.win .back {
+  background-image: url("/assets/zoro.png");
+  background-size: cover;
+} */
+
+.return.zoro {
+  background-image: url("/assets/zoro.png");
+  background-size: contain;
+  transform: rotateY(180deg);
 }
 
-.return.yellow,
-.card.yellow.win .front {
-  background-color: yellow;
+.card.zoro.win {
+  transition: all 1s ease-in-out;
+  visibility: hidden;
 }
 
-.return.black,
-.card.black.win .front {
-  background-color: black;
+.return.nami {
+  background-image: url("/assets/nami.png");
+  background-size: cover;
+  transform: rotateY(180deg);
 }
 
-.return.orange,
-.card.orange.win .front {
-  background-color: orange;
+.card.nami.win {
+  transition: all 1s ease-in-out;
+  visibility: hidden;
 }
 
-.return.red,
-.card.red.win .front {
-  background-color: red;
+.return.franky {
+  background-image: url("/assets/franky.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+.card.franky.win {
+  transition: all 1s ease-in-out;
+  visibility: hidden;
 }
 
-.return.rebeccapurple,
-.card.rebeccapurple.win .front {
-  background-color: rebeccapurple;
+.return.luffy {
+  background-image: url("/assets/luffy.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+.card.luffy.win {
+  transition: all 1s ease-in-out;
+  visibility: hidden;
 }
 
-.return.violet,
-.card.violet.win .front {
-  background-color: violet;
+.return.brook {
+  background-image: url("/assets/brook.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+.card.brook.win {
+  transition: all 1s ease-in-out;
+  visibility: hidden;
 }
 
-.return.brown,
-.card.brown.win .front {
-  background-color: brown;
+.return.robin {
+  background-image: url("/assets/robin.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+.card.robin.win {
+  transition: all 1s ease-in-out;
+  visibility: hidden;
+}
+
+.return.sanji {
+  background-image: url("/assets/sanji.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+.card.sanji.win {
+  transition: all 1s ease-in-out;
+  visibility: hidden;
+}
+
+.return.chopper {
+  background-image: url("/assets/chopper.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+.card.chopper.win {
+  transition: all 1s ease-in-out;
+  visibility: hidden;
+}
+
+.return.jinbe {
+  background-image: url("/assets/jinbe.png");
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+.card.jinbe.win {
+  transition: all 1s ease-in-out;
+  visibility: hidden;
+}
+
+/* Media query */
+
+@media (max-width: 1920px) {
+  .card {
+    height: 232px;
+    width: 164px;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
 }

@@ -23,22 +23,24 @@ var Return = function () {
 
 var Random = function () {
   const Choise = [
-    "green",
-    "yellow",
-    "green",
-    "yellow",
-    "black",
-    "black",
-    "orange",
-    "orange",
-    "red",
-    "red",
-    "rebeccapurple",
-    "rebeccapurple",
-    "violet",
-    "violet",
-    "brown",
-    "brown",
+    "zoro",
+    "nami",
+    "zoro",
+    "nami",
+    "franky",
+    "franky",
+    "luffy",
+    "luffy",
+    "chopper",
+    "chopper",
+    "sanji",
+    "sanji",
+    "robin",
+    "robin",
+    "brook",
+    "brook",
+    "jinbe",
+    "jinbe"
   ];
   let indexCard = [];
   for (var i = 0; i < Choise.length; i++) {
