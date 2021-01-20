@@ -40,7 +40,7 @@ var Random = function () {
     "brook",
     "brook",
     "jinbe",
-    "jinbe"
+    "jinbe",
   ];
   let indexCard = [];
   for (var i = 0; i < Choise.length; i++) {
@@ -91,9 +91,31 @@ var Win = () => {
 var Reset = () => {
   card.forEach((item) => {
     item.className = "card";
+    cptSeconde = 0;
+    cptMinutes = 0;
   });
 };
 
+//TIMER
+
+let cptSeconde = 0;
+let cptMinutes = 0;
+const HtmlSecond = document.getElementById("seconde");
+const HtmlMinute = document.getElementById("Minute");
+var timer = () => {
+  setInterval(() => {
+    cptSeconde++;
+    HtmlSecond.innerText = cptSeconde + " " + "s";
+    HtmlMinute.innerText = cptMinutes + ":";
+
+    if (cptSeconde == 60) {
+      cptSeconde = 0;
+      cptMinutes++;
+    }
+  }, 1000);
+};
+
+timer();
 Random();
 chekWin();
 Win();

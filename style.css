@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-image: url("/assets/bg-1.jpg");
+  background-image: url("assets/bg-1.jpg");
   background-size: cover;
 }
 
@@ -56,7 +56,7 @@ body {
 } */
 
 .return.zoro {
-  background-image: url("/assets/zoro.png");
+  background-image: url("assets/zoro.png");
   background-size: contain;
   transform: rotateY(180deg);
 }
@@ -67,7 +67,7 @@ body {
 }
 
 .return.nami {
-  background-image: url("/assets/nami.png");
+  background-image: url("assets/nami.png");
   background-size: cover;
   transform: rotateY(180deg);
 }
@@ -78,7 +78,7 @@ body {
 }
 
 .return.franky {
-  background-image: url("/assets/franky.png");
+  background-image: url("assets/franky.png");
   background-size: cover;
   transform: rotateY(180deg);
 }
@@ -88,7 +88,7 @@ body {
 }
 
 .return.luffy {
-  background-image: url("/assets/luffy.png");
+  background-image: url("assets/luffy.png");
   background-size: cover;
   transform: rotateY(180deg);
 }
@@ -98,7 +98,7 @@ body {
 }
 
 .return.brook {
-  background-image: url("/assets/brook.png");
+  background-image: url("assets/brook.png");
   background-size: cover;
   transform: rotateY(180deg);
 }
@@ -108,7 +108,7 @@ body {
 }
 
 .return.robin {
-  background-image: url("/assets/robin.png");
+  background-image: url("assets/robin.png");
   background-size: cover;
   transform: rotateY(180deg);
 }
@@ -118,7 +118,7 @@ body {
 }
 
 .return.sanji {
-  background-image: url("/assets/sanji.png");
+  background-image: url("assets/sanji.png");
   background-size: cover;
   transform: rotateY(180deg);
 }
@@ -128,7 +128,7 @@ body {
 }
 
 .return.chopper {
-  background-image: url("/assets/chopper.png");
+  background-image: url("assets/chopper.png");
   background-size: cover;
   transform: rotateY(180deg);
 }
@@ -138,13 +138,25 @@ body {
 }
 
 .return.jinbe {
-  background-image: url("/assets/jinbe.png");
+  background-image: url("assets/jinbe.png");
   background-size: cover;
   transform: rotateY(180deg);
 }
 .card.jinbe.win {
   transition: all 1s ease-in-out;
   visibility: hidden;
+}
+
+/* TIMER */
+
+.timer {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  display: flex;
 }
 
 /* Media query */
